@@ -12,9 +12,9 @@ VALUES
 INSERT INTO cliente(cedula_cliente, nombre_cliente, direccion_cliente, ciudad_cliente, tipo_industria)
 VALUES
 (2568741, 'Jhon Gutierrez', 'AV 35 #15-15', 'Medellin', 'Agropecuaria'),
-(3654584, 'Leandro Vargas', 'AV 312 #6-2', 'Manizales', 'Agropecuaria'),
+(3654584, 'Leandro Vargas', 'AV 312 #6-2', 'Manizales', 'Reposteria'),
 (3211458, 'Valentina Vargas', 'AV 24 #5-8', 'Manizales', 'Tecnologia'),
-(9644841, 'Estefania Guzman', 'AV 77 #31-58', 'Bogota', 'Ventas'),
+(9644841, 'Estefania Guzman', 'AV 77 #31-58', 'Bogota', 'Reposteria'),
 (3187489, 'Paluca Loaiza', 'AV 83 #35-54', 'Cali', 'Ventas');
 --************************************************
 

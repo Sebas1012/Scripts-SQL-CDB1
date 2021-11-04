@@ -32,7 +32,7 @@ CREATE TABLE carro(
 	valor money NOT NULL,
 	codigo_tipo int NOT NULL,
 	numero_parqueo INT NOT NULL,
-	
+
 	--Relaciones
 	FOREIGN KEY(codigo_tipo) REFERENCES tipo(codigo_tipo) ON DELETE CASCADE ON UPDATE CASCADE
 	
@@ -48,6 +48,6 @@ CREATE TABLE venta(
 	--Relaciones
 	FOREIGN KEY(codigo_vendedor) REFERENCES vendedor(codigo_vendedor) ON DELETE CASCADE ON UPDATE CASCADE,
 	FOREIGN KEY(cedula_cliente) REFERENCES cliente(cedula_cliente) ON DELETE CASCADE ON UPDATE CASCADE,
-	FOREIGN KEY(placa_carro) REFERENCES carro(placa) ON DELETE CASCADE ON UPDATE CASCADE
+	FOREIGN KEY(placa_carro) REFERENCES carro(placa) ON DELETE CASCADE ON UPDATE CASCADE,
 ); 
 GO

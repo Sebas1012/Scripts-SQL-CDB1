@@ -19,7 +19,7 @@ GO
 CREATE TABLE talleres(
 	codigo_taller int IDENTITY(1, 1) NOT NULL PRIMARY KEY,
 	titulo_taller varchar(30) NOT NULL,
-	grado_dificultad varchar NOT NULL
+	grado_dificultad varchar(10) NOT NULL
 );
 GO
 CREATE TABLE profesores(
@@ -38,7 +38,7 @@ CREATE TABLE alumnos_parciales(
 	/*Deberia ser un float*/
 	nota_parcial int,
 
-    /*Relaciones*/
+    	/*Relaciones*/
 	FOREIGN KEY(codigo_alumno) REFERENCES alumno(codigo_alumno),
 	FOREIGN KEY(codigo_parcial) REFERENCES parciales(codigo_parcial)
 );
@@ -51,7 +51,7 @@ CREATE TABLE alumnos_talleres(
 	nota_taller int NOT NULL,
 	fecha_r date NOT NULL,
 
-    /*Relaciones*/
+    	/*Relaciones*/
 	FOREIGN KEY(codigo_alumno) REFERENCES alumno(codigo_alumno),
 	FOREIGN KEY(codigo_taller) REFERENCES talleres(codigo_taller)
 );
@@ -62,7 +62,7 @@ CREATE TABLE profesores_talleres(
 	codigo_taller int NOT NULL,
 	fecha_ultimo_taller date NOT NULL,
 
-    /*Relaciones*/
+    	/*Relaciones*/
 	FOREIGN KEY(cedula_profesor) REFERENCES profesores(cedula_profesor),
 	FOREIGN KEY(codigo_taller) REFERENCES talleres(codigo_taller)
 );
